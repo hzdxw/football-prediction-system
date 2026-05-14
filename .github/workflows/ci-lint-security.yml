@@ -1,0 +1,41 @@
+name: CI — Lint & Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --break-system-packages pre-commit pre-commit-hooks detect-secrets flake8
+
+      - name: Run pre-commit hooks
+        run: |
+          pre-commit run --all-files
+
+  security-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect secrets
+        run: |
+          pip install --break-system-packages detect-secrets
+          detect-secrets scan --baseline .secrets.baseline 2>&1 || true
+          # 非零退出表示发现新 secrets

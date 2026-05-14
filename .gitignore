@@ -1,0 +1,52 @@
+# 保护敏感信息
+auth.json
+config.yaml
+*.log
+*.db-shm
+*.db-wal
+hermes_state.db
+state.db
+kanban.db
+football.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 大文件/缓存
+audio_cache/
+image_cache/
+images/
+models_dev_cache.json
+feishu_seen_message_ids.json
+
+# GitHub Actions（本地验证）
+.github/workflows/*.local*
+
+# Node（采集脚本）
+data-collection/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 本地临时
+*.tmp
+*.swp
+*~
+
+# ML模型
+catboost_info/
+*.cbm
+
+# 私有数据
+*.private
+secrets/

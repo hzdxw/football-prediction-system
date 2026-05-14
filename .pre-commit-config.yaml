@@ -1,0 +1,35 @@
+# pre-commit hooks — 自动lint/语法检查
+# 安装: pip install pre-commit && pre-commit install --install-hooks
+# 手动触发: pre-commit run --all-files
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-ast
+        name: python-ast-parse
+        description: 所有.py文件AST解析验证
+
+      - id: check-yaml
+        name: yaml-syntax-check
+        description: YAML文件语法验证
+
+      - id: check-added-large-files
+        args: ['--maxkb=512']
+        name: large-file-check
+        description: 防止意外提交大文件(>512KB)
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        name: flake8-lint
+        description: Python风格检查（workspace核心模块）
+        args: ['--max-line-length=160', '--ignore=E501,F401,W503,E402']
+        files: ^(
+            ml_predict_5play\.py|
+            prediction/post_adjust\.py|
+            prediction/calibrated_poisson\.py|
+            prediction/value_bet\.py|
+            prediction/super_fusion\.py|
+            ensemble_predict\.py
+          )
