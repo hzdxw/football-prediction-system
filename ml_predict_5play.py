@@ -2347,8 +2347,36 @@ def predict_5play(match, _skip_super_fusion=False):
         tail = compute_odds_tail(ho)
         if tail == 1 and ho <= 1.50:
             baodian_signals.append('heavy_tail_favorite:优势方重尾→安全')
+            conf = min(0.99, conf + 0.02)  # Gap-4: 重尾优势方→庄家控盘稳定→置信增强
         elif tail == 0 and ho <= 1.50:
             baodian_signals.append('light_tail_favorite:优势方轻尾→警惕诱')
+            conf = max(0.05, conf - 0.03)  # Gap-4: 轻尾优势方→诱盘嫌疑→置信削弱
+
+        # Gap-5: 分布类型量化 → 基于SP分布与ELO差的关系判断赔率分布类型
+        # 顺分布(0): 赔率分布与ELO预期一致 → 标准处理
+        # 反常分布(1): ELO差距大但赔率差距小（庄家故意压缩）→ 平局/冷门风险
+        # 中庸分布(2): 各方向概率接近 → 庄家无明确态度
+        try:
+            _home_elo_raw = match.get('home_elo')
+            _away_elo_raw = match.get('away_elo')
+            if _home_elo_raw is not None and _away_elo_raw is not None:
+                _he = float(_home_elo_raw)
+                _ae = float(_away_elo_raw)
+                _elo_diff = abs(_he - _ae)
+                # 赔率端差值（欧赔倒数归一化）
+                _h_implied = 1.0 / ho if ho > 0 else 0
+                _a_implied = 1.0 / ao if ao > 0 else 0
+                _odds_diff = abs(_h_implied - _a_implied)
+                # 反常分布: ELO差大但赔率差小 → 庄家压赔
+                if _elo_diff > 80 and _odds_diff < 0.08:
+                    baodian_signals.append(f'dist_reverse:ELO差{_elo_diff:.0f}但赔率差{_odds_diff:.3f}→庄家压缩→冷门风险')
+                    conf = max(0.05, conf - 0.05)  # Gap-5: 反常分布降置信
+                elif _elo_diff < 40 and _odds_diff > 0.15:
+                    baodian_signals.append(f'dist_neutral:双方接近但赔率分歧大→中庸分布→庄家无态度')
+                    conf = conf * 0.97  # Gap-5: 中庸分布轻微降权
+                # 顺分布正常处理，不调整
+        except Exception:
+            pass
 
         ea_gap = compute_euro_asian_gap(ho, ao, actual_hc)
         if ea_gap is not None:
