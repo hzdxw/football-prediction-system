@@ -7,8 +7,8 @@ files = [
     'prediction/post_adjust.py',
     'prediction/calibrated_poisson.py',
     'prediction/value_bet.py',
-    'prediction/super_fusion.py',
-    'ensemble_predict.py',
+    'prediction/strategies/super_fusion.py',
+    'prediction/ensemble_predict.py',
 ]
 
 errors = []

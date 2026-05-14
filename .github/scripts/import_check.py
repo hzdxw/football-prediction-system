@@ -17,6 +17,8 @@ files = {
     '_cp': 'prediction/calibrated_poisson.py',
     '_pa': 'prediction/post_adjust.py',
     '_vb': 'prediction/value_bet.py',
+    '_sf': 'prediction/strategies/super_fusion.py',
+    '_ep': 'prediction/ensemble_predict.py',
 }
 for name, path in files.items():
     if os.path.exists(path):
