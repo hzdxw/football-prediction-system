@@ -20,57 +20,7 @@ jobs:
           python-version: '3.11'
 
       - name: Syntax check (AST parse)
-        run: |
-          python3 << 'PYEOF'
-import ast, sys, os
-files = [
-    'ml_predict_5play.py',
-    'prediction/post_adjust.py',
-    'prediction/calibrated_poisson.py',
-    'prediction/value_bet.py',
-    'prediction/super_fusion.py',
-    'ensemble_predict.py',
-]
-errors = []
-for f in files:
-    if not os.path.exists(f):
-        errors.append('MISSING: ' + f)
-        continue
-    try:
-        with open(f) as fh:
-            ast.parse(fh.read())
-        print('  OK  ' + f)
-    except SyntaxError as e:
-        errors.append('SYNTAX ' + f + ':' + str(e.lineno) + ' ' + e.msg)
-if errors:
-    for e in errors:
-        print(e, file=sys.stderr)
-    sys.exit(1)
-else:
-    print('All files passed AST check')
-PYEOF
+        run: python3 .github/scripts/ast_check.py
 
       - name: Import chain check
-        run: |
-          python3 << 'PYEOF'
-import importlib.util, sys, os
-def try_import(name, path):
-    try:
-        spec = importlib.util.spec_from_file_location(name, path)
-        m = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(m)
-        print('  OK  ' + name)
-        return True
-    except Exception as e:
-        print('  FAIL ' + name + ': ' + str(e))
-        return False
-files = {
-    '_cp': 'prediction/calibrated_poisson.py',
-    '_pa': 'prediction/post_adjust.py',
-    '_vb': 'prediction/value_bet.py',
-}
-for name, path in files.items():
-    if os.path.exists(path):
-        sys.modules[name] = None
-        try_import(name, path)
-PYEOF
+        run: python3 .github/scripts/import_check.py
