@@ -1152,9 +1152,13 @@ class EnsemblePredictor:
         """收集所有信号用于展示"""
         signals = []
 
+        def _safe_oos(r):
+            try: return float(r.get('oos_score', 0))
+            except (ValueError, TypeError): return 0.0
+
         # 模型来源
         if ml_result:
-            signals.append(f"[ML] {ml_result.get('prediction','?')} (OOS={float(ml_result.get('oos_score', 0))*100:.0f}%)")
+            signals.append(f"[ML] {ml_result.get('prediction','?')} (OOS={_safe_oos(ml_result)*100:.0f}%)")
         if bp_result:
             signals.append(f"[BP] {bp_result.get('prediction','?')} (conf={bp_result.get('confidence',0)*100:.0f}%)")
         if poisson_result:
