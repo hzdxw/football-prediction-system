@@ -1,0 +1,478 @@
+{
+  "11": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 37.5,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "09": {
+    "factor": 0.65,
+    "cap": 40,
+    "hit_rate": 22.2,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "07": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 18.2,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "06": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "解放者杯": {
+    "weight": 0.45,
+    "cap": 0.35,
+    "hit_rate": 0.0,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "意甲": {
+    "weight": 0.45,
+    "cap": 0.35,
+    "hit_rate": 0.125,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "日职": {
+    "weight": 0.45,
+    "cap": 0.35,
+    "hit_rate": 0.143,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "韩职": {
+    "weight": 0.65,
+    "cap": 0.4,
+    "hit_rate": 0.25,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "沙职": {
+    "weight": 0.65,
+    "cap": 0.4,
+    "hit_rate": 0.286,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "英超": {
+    "weight": 0.75,
+    "cap": 0.45,
+    "hit_rate": 0.333,
+    "source": "report_scan",
+    "added": "2026-05-15"
+  },
+  "5区间平局率6": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.5,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "周日命中率4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.2,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "12数据仍10": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "14": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "10": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "55": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "准确率": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "输出270": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "区间命中率4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 6.2,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "89区间6": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 8.2,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "on结算命中率全部为": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "低于随机基准3": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 3.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "实际负占5": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "10最佳日4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 8.3,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "但均值为2": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 8.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "95区间4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.9,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "最高但仍低于5": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "conf上限3": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "conf上限4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "conf上限5": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "结构下平局概率最高仅": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 34.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "80s太短导致10": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "场仅": {
+    "factor": 0.65,
+    "cap": 40,
+    "hit_rate": 28.1,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "偏离": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 30.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "J联赛": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "命中率6": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 3.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "的4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.3,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "命中率仅4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.1,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "冷门区命中率4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 8.8,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "45": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 35.6,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "36": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 38.9,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "置信上限2": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "置信上限3": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "24": {
+    "factor": 0.65,
+    "cap": 40,
+    "hit_rate": 25.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "25": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 18.8,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "22": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 31.8,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "29": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 34.5,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "历史5": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.6,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "置信度上限强制压至3": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "历史2": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.2,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "nfidence降权": {
+    "factor": 0.75,
+    "cap": 45,
+    "hit_rate": 30.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "当前值低于4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 5.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "随机基率3": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 3.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "8分类基率1": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 2.5,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "实际命中5": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 8.7,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "Platt输出仅4": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 7.7,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "晚场36场预测10": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "实际9": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 7.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "Poisson模型": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "30": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 6.9,
+    "source": "daily_review",
+    "date": "2026-05-13"
+  },
+  "目标": {
+    "factor": 0.65,
+    "cap": 40,
+    "hit_rate": 24.8,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "负占6": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 7.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "非固定": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "250": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "595": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "复盘统计永远": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 0.0,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "vs": {
+    "factor": 0.65,
+    "cap": 40,
+    "hit_rate": 22.2,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  },
+  "39": {
+    "factor": 0.45,
+    "cap": 35,
+    "hit_rate": 18.8,
+    "source": "daily_review",
+    "date": "2026-05-14"
+  }
+}

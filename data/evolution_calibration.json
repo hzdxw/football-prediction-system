@@ -1,0 +1,471 @@
+{
+  "version": "v3_platt_rolling",
+  "updated_at": "2026-05-05",
+  "rolling_window_days": 60,
+  "platt": {
+    "a": 1.987941,
+    "b": -0.968043,
+    "calibration": [
+      {
+        "raw": 25,
+        "calibrated": 38.4
+      },
+      {
+        "raw": 30,
+        "calibrated": 40.8
+      },
+      {
+        "raw": 35,
+        "calibrated": 43.2
+      },
+      {
+        "raw": 40,
+        "calibrated": 45.7
+      },
+      {
+        "raw": 45,
+        "calibrated": 48.2
+      },
+      {
+        "raw": 50,
+        "calibrated": 50.6
+      },
+      {
+        "raw": 55,
+        "calibrated": 53.1
+      },
+      {
+        "raw": 60,
+        "calibrated": 55.6
+      },
+      {
+        "raw": 65,
+        "calibrated": 58.0
+      },
+      {
+        "raw": 70,
+        "calibrated": 60.4
+      },
+      {
+        "raw": 75,
+        "calibrated": 62.8
+      }
+    ],
+    "n_samples": 561,
+    "mae": 0.4739,
+    "avg_error_spf": 0.4431,
+    "avg_error_hhad": -0.5093,
+    "quantile_calibration": [
+      {
+        "range": "-5-0%",
+        "avg_conf": -0.5,
+        "actual_hit_rate": 16.1,
+        "platt_prob": 27.3,
+        "gap": 11.3,
+        "n": 56
+      },
+      {
+        "range": "0-27%",
+        "avg_conf": 13.7,
+        "actual_hit_rate": 36.4,
+        "platt_prob": 33.3,
+        "gap": -3.1,
+        "n": 55
+      },
+      {
+        "range": "27-33%",
+        "avg_conf": 29.7,
+        "actual_hit_rate": 46.5,
+        "platt_prob": 40.7,
+        "gap": -5.8,
+        "n": 43
+      },
+      {
+        "range": "33-37%",
+        "avg_conf": 34.4,
+        "actual_hit_rate": 39.3,
+        "platt_prob": 42.9,
+        "gap": 3.6,
+        "n": 61
+      },
+      {
+        "range": "37-42%",
+        "avg_conf": 38.8,
+        "actual_hit_rate": 43.6,
+        "platt_prob": 45.1,
+        "gap": 1.5,
+        "n": 55
+      },
+      {
+        "range": "42-47%",
+        "avg_conf": 44.1,
+        "actual_hit_rate": 58.7,
+        "platt_prob": 47.7,
+        "gap": -11.0,
+        "n": 63
+      },
+      {
+        "range": "47-52%",
+        "avg_conf": 48.9,
+        "actual_hit_rate": 50.0,
+        "platt_prob": 50.1,
+        "gap": 0.1,
+        "n": 56
+      },
+      {
+        "range": "52-59%",
+        "avg_conf": 54.9,
+        "actual_hit_rate": 60.7,
+        "platt_prob": 53.1,
+        "gap": -7.6,
+        "n": 56
+      },
+      {
+        "range": "59-65%",
+        "avg_conf": 60.8,
+        "actual_hit_rate": 53.7,
+        "platt_prob": 56.0,
+        "gap": 2.3,
+        "n": 41
+      },
+      {
+        "range": "65-100%",
+        "avg_conf": 78.3,
+        "actual_hit_rate": 57.3,
+        "platt_prob": 64.3,
+        "gap": 7.0,
+        "n": 75
+      }
+    ]
+  },
+  "odds_bands": {
+    "home_strong": {
+      "n": 96,
+      "hit_rate": 76.0,
+      "avg_confidence": 55.2
+    },
+    "home_advantage": {
+      "n": 130,
+      "hit_rate": 46.9,
+      "avg_confidence": 50.3
+    },
+    "balanced": {
+      "n": 113,
+      "hit_rate": 33.6,
+      "avg_confidence": 39.5
+    },
+    "away_advantage": {
+      "n": 96,
+      "hit_rate": 49.0,
+      "avg_confidence": 34.6
+    },
+    "away_strong": {
+      "n": 67,
+      "hit_rate": 46.3,
+      "avg_confidence": 48.1
+    }
+  },
+  "leagues": {
+    "英联杯": {
+      "n": 1,
+      "hit_rate": 0.0
+    },
+    "解放者杯": {
+      "n": 7,
+      "hit_rate": 0.0
+    },
+    "西国王杯": {
+      "n": 1,
+      "hit_rate": 0.0
+    },
+    "亚冠乙": {
+      "n": 1,
+      "hit_rate": 0.0
+    },
+    "荷兰杯": {
+      "n": 1,
+      "hit_rate": 0.0
+    },
+    "亚冠精英": {
+      "n": 1,
+      "hit_rate": 0.0
+    },
+    "法乙": {
+      "n": 12,
+      "hit_rate": 25.0
+    },
+    "沙职": {
+      "n": 8,
+      "hit_rate": 25.0
+    },
+    "英冠": {
+      "n": 26,
+      "hit_rate": 26.9
+    },
+    "欧罗巴": {
+      "n": 7,
+      "hit_rate": 28.6
+    },
+    "英超": {
+      "n": 38,
+      "hit_rate": 34.2
+    },
+    "荷甲": {
+      "n": 19,
+      "hit_rate": 36.8
+    },
+    "韩职": {
+      "n": 13,
+      "hit_rate": 38.5
+    },
+    "未知": {
+      "n": 41,
+      "hit_rate": 39.0
+    },
+    "德甲": {
+      "n": 45,
+      "hit_rate": 40.0
+    },
+    "澳超": {
+      "n": 20,
+      "hit_rate": 40.0
+    },
+    "葡超": {
+      "n": 17,
+      "hit_rate": 41.2
+    },
+    "美职": {
+      "n": 7,
+      "hit_rate": 42.9
+    },
+    "日职": {
+      "n": 15,
+      "hit_rate": 46.7
+    },
+    "J1联赛": {
+      "n": 2,
+      "hit_rate": 50.0
+    },
+    "芬超": {
+      "n": 4,
+      "hit_rate": 50.0
+    },
+    "国际赛": {
+      "n": 40,
+      "hit_rate": 52.5
+    },
+    "荷乙": {
+      "n": 11,
+      "hit_rate": 54.5
+    },
+    "法甲": {
+      "n": 20,
+      "hit_rate": 55.0
+    },
+    "意甲": {
+      "n": 52,
+      "hit_rate": 55.8
+    },
+    "德乙": {
+      "n": 16,
+      "hit_rate": 56.2
+    },
+    "韩K联": {
+      "n": 7,
+      "hit_rate": 57.1
+    },
+    "世预赛": {
+      "n": 14,
+      "hit_rate": 57.1
+    },
+    "瑞超": {
+      "n": 14,
+      "hit_rate": 57.1
+    },
+    "挪超": {
+      "n": 12,
+      "hit_rate": 58.3
+    },
+    "西甲": {
+      "n": 42,
+      "hit_rate": 59.5
+    },
+    "英足总杯": {
+      "n": 5,
+      "hit_rate": 60.0
+    },
+    "欧冠": {
+      "n": 13,
+      "hit_rate": 61.5
+    },
+    "欧联杯": {
+      "n": 8,
+      "hit_rate": 62.5
+    },
+    "欧协联": {
+      "n": 8,
+      "hit_rate": 62.5
+    },
+    "英甲": {
+      "n": 7,
+      "hit_rate": 71.4
+    },
+    "日职联": {
+      "n": 1,
+      "hit_rate": 100.0
+    },
+    "MLS": {
+      "n": 1,
+      "hit_rate": 100.0
+    },
+    "女亚洲杯": {
+      "n": 2,
+      "hit_rate": 100.0
+    },
+    "沙特职业联赛": {
+      "n": 1,
+      "hit_rate": 100.0
+    },
+    "瑞典超": {
+      "n": 1,
+      "hit_rate": 100.0
+    }
+  },
+  "auto_review": {
+    "updated_at": "2026-05-15",
+    "sample_size": 610,
+    "spf_accuracy": 49.2,
+    "bf_accuracy": 9.2,
+    "zjq_accuracy": 18.7,
+    "draw_actual": 26.7,
+    "league_stats": {
+      "意甲": {
+        "n": 52,
+        "spf": 51.9
+      },
+      "西甲": {
+        "n": 43,
+        "spf": 58.1
+      },
+      "德甲": {
+        "n": 42,
+        "spf": 47.6
+      },
+      "未知": {
+        "n": 42,
+        "spf": 47.6
+      },
+      "国际赛": {
+        "n": 39,
+        "spf": 53.8
+      },
+      "英超": {
+        "n": 37,
+        "spf": 45.9
+      },
+      "其他": {
+        "n": 28,
+        "spf": 46.4
+      },
+      "日职": {
+        "n": 24,
+        "spf": 50.0
+      },
+      "英冠": {
+        "n": 24,
+        "spf": 25.0
+      },
+      "荷甲": {
+        "n": 21,
+        "spf": 33.3
+      },
+      "法甲": {
+        "n": 20,
+        "spf": 60.0
+      },
+      "葡超": {
+        "n": 19,
+        "spf": 42.1
+      },
+      "澳超": {
+        "n": 19,
+        "spf": 42.1
+      },
+      "欧罗巴": {
+        "n": 18,
+        "spf": 66.7
+      },
+      "韩职": {
+        "n": 17,
+        "spf": 35.3
+      },
+      "瑞超": {
+        "n": 16,
+        "spf": 62.5
+      },
+      "欧冠": {
+        "n": 15,
+        "spf": 60.0
+      },
+      "德乙": {
+        "n": 15,
+        "spf": 66.7
+      },
+      "世预赛": {
+        "n": 14,
+        "spf": 57.1
+      },
+      "法乙": {
+        "n": 13,
+        "spf": 15.4
+      },
+      "挪超": {
+        "n": 13,
+        "spf": 53.8
+      },
+      "荷乙": {
+        "n": 12,
+        "spf": 50.0
+      },
+      "解放者杯": {
+        "n": 11,
+        "spf": 36.4
+      },
+      "沙职": {
+        "n": 10,
+        "spf": 50.0
+      },
+      "欧协联": {
+        "n": 9,
+        "spf": 77.8
+      },
+      "英甲": {
+        "n": 7,
+        "spf": 71.4
+      },
+      "美职": {
+        "n": 5,
+        "spf": 60.0
+      },
+      "芬超": {
+        "n": 5,
+        "spf": 40.0
+      },
+      "英足总杯": {
+        "n": 5,
+        "spf": 60.0
+      },
+      "J联赛": {
+        "n": 4,
+        "spf": 0.0
+      }
+    },
+    "drifts": [
+      {
+        "param": "draw_boost",
+        "issue": "平局实际26.7% vs 预测4.9% (差+21.8%)",
+        "suggestion": "友谊赛draw_boost从0.06调整到0.28"
+      }
+    ]
+  }
+}
